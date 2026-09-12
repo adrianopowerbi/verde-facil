@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pontos de Coleta - Verde Fácil</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Verde Fácil</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="pontos.html">Pontos de Coleta</a>
+            <a href="denuncia.html">Denúncia Ambiental</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+
+            <h2>♻️ Pontos de Coleta</h2>
+
+            <p>
+                Encontre locais para realizar o descarte correto
+                dos materiais recicláveis.
+            </p>
+
+            <div class="cards">
+
+                <div class="card"
+                    onclick="selecionarPonto('Ponto Central', 'Centro', 'papel, plástico e metal')">
+
+                    <h3>📍 Ponto Central</h3>
+
+                    <p>Localização: Centro</p>
+
+                    <p>Recebe: papel, plástico e metal.</p>
+
+                    <strong>👆 Clique para selecionar</strong>
+
+                </div>
+
+
+                <div class="card"
+                    onclick="selecionarPonto('Ponto do Bairro', 'Bairro Verde', 'papelão, plástico e vidro')">
+
+                    <h3>📍 Ponto do Bairro</h3>
+
+                    <p>Localização: Bairro Verde</p>
+
+                    <p>Recebe: papelão, plástico e vidro.</p>
+
+                    <strong>👆 Clique para selecionar</strong>
+
+                </div>
+
+
+                <div class="card"
+                    onclick="selecionarPonto('Eco Ponto', 'Zona Rural', 'materiais recicláveis')">
+
+                    <h3>📍 Eco Ponto</h3>
+
+                    <p>Localização: Zona Rural</p>
+
+                    <p>Recebe: materiais recicláveis.</p>
+
+                    <strong>👆 Clique para selecionar</strong>
+
+                </div>
+
+            </div>
+
+
+            <div id="pontoSelecionado"></div>
+
+
+            <br>
+
+            <a href="index.html">
+                <button>← Voltar para o início</button>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Verde Fácil © 2026</p>
+    </footer>
+
+
+    <script>
+
+        function selecionarPonto(nome, localizacao, materiais) {
+
+            document.getElementById("pontoSelecionado").innerHTML = `
+                
+                <div class="card">
+
+                    <h3>📍 ${nome} selecionado</h3>
+
+                    <p>
+                        <strong>Localização:</strong> ${localizacao}
+                    </p>
+
+                    <p>
+                        <strong>Materiais aceitos:</strong> ${materiais}
+                    </p>
+
+                    <p>
+                        ✅ Ponto de coleta selecionado com sucesso!
+                    </p>
+
+                </div>
+
+            `;
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

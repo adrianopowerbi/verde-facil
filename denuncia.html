@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denúncia Ambiental - Verde Fácil</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Verde Fácil</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="pontos.html">Pontos de Coleta</a>
+            <a href="denuncia.html">Denúncia Ambiental</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+
+            <h2>🚨 Denúncia Ambiental</h2>
+
+            <p>
+                Registre um problema ambiental de forma simples
+                e anônima.
+            </p>
+
+            <form id="formDenuncia">
+
+                <label>Tipo de problema:</label>
+
+           <div>
+    <label>
+        <input type="radio" name="tipo" value="Queimada" required>
+        Queimada
+    </label>
+
+    <label>
+        <input type="radio" name="tipo" value="Descarte irregular de lixo">
+        Descarte irregular de lixo
+    </label>
+
+    <label>
+        <input type="radio" name="tipo" value="Poluição">
+        Poluição
+    </label>
+
+    <label>
+        <input type="radio" name="tipo" value="Outro">
+        Outro
+    </label>
+</div>
+
+
+                <label>Local:</label>
+
+                <input
+                    type="text"
+                    id="local"
+                    placeholder="Digite o local"
+                    required
+                >
+
+
+                <label>Descrição:</label>
+
+                <textarea
+                    id="descricao"
+                    placeholder="Descreva o problema"
+                    rows="5"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    🚨 Enviar denúncia
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+
+            <a href="index.html">
+                <button>← Voltar para o início</button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Verde Fácil © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
